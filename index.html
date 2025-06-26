@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BookItPro - Booking System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS and Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="./style.css" type="text/css">
+    
+</head>
+<body>
+  <!-- Header/Navbar -->
+  <header class="main-header">
+    <div class="navbar-container">
+      <a href="#home" class="brand">BookItPro</a>
+      <!-- Hamburger menu toggle -->
+      <input type="checkbox" id="menu-toggle" autocomplete="off" />
+      <label for="menu-toggle" class="nav-toggle-label" aria-label="Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </label>
+      <nav class="nav-menu d-flex">
+        <div class="nav-links d-flex">
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#booking">Booking</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Scroll To Top Arrow -->
+  <div id="scrollTopArrow" tabindex="0" aria-label="Scroll to top" title="Scroll to top">
+    <i class="bi bi-arrow-up"></i>
+  </div>
+
+  <!-- Hero/Home -->
+  <section id="home" class="section hero animate-fade-up">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-6 text-center text-lg-start">
+          <h1 class="display-5 fw-bold mb-3">Book in <span style="color:var(--secondary)">Style</span></h1>
+          <p class="lead mb-4">BookItPro is your gateway to seamless bookings—appointments, meetings, and services made effortless. Trusted by professionals, teams, and clients for convenience, reliability, and speed. </p>
+          <ul class="mb-4" style="font-size:1.13rem;">
+            <li>24/7 real-time availability & instant confirmations</li>
+            <li>Automated reminders, calendar sync & payment integration</li>
+            <li>Perfect for health, beauty, corporate, events, and more</li>
+          </ul>
+          <a href="#booking" class="btn hero-btn mt-2">Book Now</a>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="./assets/spencer-davis-0QcSnCM0aMc-unsplash.jpg" class="img-fluid rounded-4 shadow-lg" alt="Hero booking" style="max-height:310px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section animate-fade-up">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col text-center">
+          <h2 class="section-title">About <span style="color:var(--secondary)">BookItPro</span></h2>
+          <p class="lead mb-2">We deliver a next-gen booking experience with modern visuals, tech, and trust.<br>Our mission: Scheduling made smooth for everyone, from freelancers to enterprises.</p>
+        </div>
+      </div>
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <div class="glass-3d h-100 text-center p-4 service-card">
+            <div class="service-icon mb-2"><i class="bi bi-calendar2-week"></i></div>
+            <h5 class="fw-bold" style="color:var(--primary);">Our Story</h5>
+            <p>
+              BookItPro started in 2020 with a vision: make bookings simple, intuitive, and accessible. 
+              Today, we power thousands of bookings daily, connecting clients and providers across health, fitness, events, salons, and more.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="glass-3d h-100 text-center p-4 service-card">
+            <div class="service-icon mb-2"><i class="bi bi-shield-lock-fill"></i></div>
+            <h5 class="fw-bold" style="color:var(--primary);">Our Values</h5>
+            <ul class="ps-3 text-start">
+              <li>Modern, delightful, intuitive design</li>
+              <li>Trust, transparency, and security</li>
+              <li>Always-on support & customer focus</li>
+              <li>Continuous innovation & improvement</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="glass-3d h-100 text-center p-4 service-card">
+            <div class="service-icon mb-2"><i class="bi bi-lightbulb-fill"></i></div>
+            <h5 class="fw-bold" style="color:var(--primary);">Why BookItPro?</h5>
+            <p>
+              We bring together seamless booking tech, real-time management, secure payments, and a brilliant client/provider experience—backed by analytics and world-class support.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4 gy-4">
+        <div class="col-lg-6">
+          <div class="glass-3d h-100 p-4">
+            <h6 class="fw-bold" style="color:var(--primary);">Who Uses BookItPro?</h6>
+            <ul>
+              <li>Doctors, dentists, clinics & therapists</li>
+              <li>Salons, spas, personal trainers</li>
+              <li>Event planners, conference organizers</li>
+              <li>Education & tutoring, coworking spaces</li>
+              <li>Corporate teams, consultants, and more</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="glass-3d h-100 p-4">
+            <h6 class="fw-bold" style="color:var(--primary);">What Sets Us Apart?</h6>
+            <ul>
+              <li>Instant online booking, 24/7</li>
+              <li>Custom reminders & rescheduling</li>
+              <li>Smart waitlists & group bookings</li>
+              <li>Reporting, analytics & business tools</li>
+              <li>Embeddable widgets & calendar sync</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section animate-fade-up">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col text-center">
+          <h2 class="section-title">Our <span style="color:var(--secondary)">Services</span></h2>
+          <p class="lead mb-0">BookItPro offers a complete toolkit for scheduling, managing, and growing your business.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="glass-3d h-100 text-center p-4 service-card">
+            <div class="service-icon"><i class="bi bi-calendar-check"></i></div>
+            <h6 class="fw-bold">Appointment Scheduling</h6>
+            <p>Book one-on-one or group appointments with real-time availability, buffer times, and custom durations. Accept bookings from web, mobile, or widgets.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="glass-3d h-100 text-center p-4 service-card">
+            <div class="service-icon"><i class="bi bi-people"></i></div>
+            <h6 class="fw-bold">Group & Event Booking</h6>
+            <p>Easily manage classes, workshops, or events. Automatic reminders, registration limits, and waitlists keep your events running smoothly.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="glass-3d h-100 text-center p-4 service-card">
+            <div class="service-icon"><i class="bi bi-shield-check"></i></div>
+            <h6 class="fw-bold">Secure Payments</h6>
+            <p>Collect deposits or full payments with Stripe/PayPal integration. Send invoices, receipts, and manage refunds with ease and security.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4 mt-2">
+        <div class="col-md-4">
+          <div class="glass-3d h-100 text-center p-4 service-card">
+            <div class="service-icon"><i class="bi bi-clock-history"></i></div>
+            <h6 class="fw-bold">24/7 Availability</h6>
+            <p>Let clients book and reschedule at their convenience. Set custom business hours, holidays, and blackout dates.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="glass-3d h-100 text-center p-4 service-card">
+            <div class="service-icon"><i class="bi bi-bar-chart-line"></i></div>
+            <h6 class="fw-bold">Analytics & Reports</h6>
+            <p>Get insights on bookings, revenue, retention, and more. Export to Excel, integrate with Google Analytics, and optimize your business.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="glass-3d h-100 text-center p-4 service-card">
+            <div class="service-icon"><i class="bi bi-gear"></i></div>
+            <h6 class="fw-bold">Custom Integrations</h6>
+            <p>Connect BookItPro with your website, CRM, or calendar. Use webhooks, Zapier, and API access for advanced workflows.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col text-center">
+          <div class="glass-3d d-inline-block p-4">
+            <h6 class="fw-bold mb-2" style="color:var(--primary);">Try BookItPro For Free!</h6>
+            <p>Sign up today and enjoy a 14-day free trial with all premium features.</p>
+            <a href="#booking" class="btn booking-btn">Start My Free Trial</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="booking" class="section animate-fade-up">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col text-center">
+          <h2 class="section-title">Book an <span style="color:var(--primary);">Appointment</span></h2>
+          <p class="lead mb-0">Ready to get started? Fill out our form and secure your spot, effortlessly.</p>
+          <p class="text-muted small">For urgent bookings, call us directly at <strong>+1 234 567 890</strong> or email <a href="mailto:support@bookitpro.com" style="color:var(--secondary);">support@bookitpro.com</a>.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="booking-section p-4 p-md-5 glass-3d">
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="bookingName" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="bookingName" required placeholder="Enter your name">
+                </div>
+                <div class="col-md-6">
+                  <label for="bookingEmail" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="bookingEmail" required placeholder="your@email.com">
+                </div>
+                <div class="col-md-6">
+                  <label for="bookingService" class="form-label">Service</label>
+                  <select class="form-select" id="bookingService" required>
+                    <option selected disabled value="">Select a service</option>
+                    <option>Consultation</option>
+                    <option>Haircut</option>
+                    <option>Meeting Room</option>
+                    <option>Personal Training</option>
+                    <option>Workshop</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label for="bookingDate" class="form-label">Date</label>
+                  <input type="date" class="form-control" id="bookingDate" required>
+                </div>
+                <div class="col-md-3">
+                  <label for="bookingTime" class="form-label">Time</label>
+                  <input type="time" class="form-control" id="bookingTime" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="bookingPhone" class="form-label">Phone</label>
+                  <input type="tel" class="form-control" id="bookingPhone" placeholder="(Optional)">
+                </div>
+                <div class="col-md-6">
+                  <label for="bookingNotes" class="form-label">Additional Notes</label>
+                  <input type="text" class="form-control" id="bookingNotes" placeholder="Any preferences or requests?">
+                </div>
+                <div class="col-12 text-center mt-3">
+                  <button type="submit" class="btn booking-btn px-5 py-2">Book Now</button>
+                </div>
+              </div>
+            </form>
+            <p class="mt-4 text-center small" style="color:var(--primary-dark);">Your booking details are confidential and securely processed.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 gy-3">
+        <div class="col-lg-6">
+          <div class="glass-3d p-4 h-100">
+            <h6 class="fw-bold mb-3" style="color:var(--primary);">How the Booking Process Works</h6>
+            <ol>
+              <li>Fill out the form & select your service, date, and time.</li>
+              <li>Get instant email/SMS confirmation.</li>
+              <li>Receive automated reminders and calendar invites.</li>
+              <li>Reschedule or cancel easily from your dashboard.</li>
+              <li>Pay securely online or in-person (if enabled).</li>
+            </ol>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="glass-3d p-4 h-100">
+            <h6 class="fw-bold mb-3" style="color:var(--primary);">Why Book Online?</h6>
+            <ul>
+              <li>Save time—no more waiting on the phone</li>
+              <li>Access real-time availability</li>
+              <li>Track and manage all your bookings in one place</li>
+              <li>Get reminders so you never miss an appointment</li>
+              <li>Easy rescheduling and cancellations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section animate-fade-up">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col text-center">
+          <h2 class="section-title">Gallery</h2>
+          <p class="lead mb-0">See BookItPro in action at real businesses. Our booking solution adapts to any use case!</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="./assets/anete-lusina-rFKBUwLg_WQ-unsplash.jpg" class="gallery-image" alt="Gallery 1">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="./assets/dino-reichmuth-A5rCN8626Ck-unsplash.jpg" class="gallery-image" alt="Gallery 2">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="./assets/ian-dooley-3NCA3tbaE5I-unsplash.jpg" class="gallery-image" alt="Gallery 3">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="./assets/jake-blucker-tMzCrBkM99Y-unsplash.jpg" class="gallery-image" alt="Gallery 4">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="./assets/luca-bravo-O453M2Liufs-unsplash.jpg" class="gallery-image" alt="Gallery 5">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="./assets/marten-bjork-wGu1pzDSm3g-unsplash.jpg" class="gallery-image" alt="Gallery 6">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="./assets/z-TrhLCn1abMU-unsplash.jpg" class="gallery-image" alt="Gallery 7">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img src="./assets/suhyeon-choi-tTfDMaRq-FE-unsplash.jpg" class="gallery-image" alt="Gallery 8">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section animate-fade-up">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col text-center">
+          <h2 class="section-title">Contact <span style="color:var(--secondary)">Us</span></h2>
+          <p class="lead mb-0">Questions, suggestions, or support? We’re here to help—reach out anytime!</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="glass-3d p-4 p-md-5">
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="contactName" class="form-label">Your Name</label>
+                  <input type="text" class="form-control" id="contactName" required placeholder="Your full name">
+                </div>
+                <div class="col-md-6">
+                  <label for="contactEmail" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="contactEmail" required placeholder="your@email.com">
+                </div>
+                <div class="col-12">
+                  <label for="contactMsg" class="form-label">Message</label>
+                  <textarea class="form-control" id="contactMsg" rows="4" required placeholder="How can we help you?"></textarea>
+                </div>
+                <div class="col-12 text-center mt-3">
+                  <button type="submit" class="btn contact-btn px-5 py-2">Send Message</button>
+                </div>
+              </div>
+            </form>
+            <div class="mt-4 text-center text-muted small" style="color:var(--primary);">
+              <i class="bi bi-geo-alt"></i> 123 Main Street, City, Country &nbsp; | &nbsp;
+              <i class="bi bi-envelope"></i> support@bookitpro.com &nbsp; | &nbsp;
+              <i class="bi bi-telephone"></i> +1 234 567 890
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-6 mb-3">
+          <div class="glass-3d p-4 h-100">
+            <h6 class="fw-bold mb-2" style="color:var(--primary);">Customer Support</h6>
+            <ul style="font-size:1.06rem;">
+              <li>Our team is available 24/7 for priority support.</li>
+              <li>Live chat, phone assistance, and email support.</li>
+              <li>Dedicated onboarding for new businesses.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-3">
+          <div class="glass-3d p-4 h-100">
+            <h6 class="fw-bold mb-2" style="color:var(--primary);">Business Inquiries</h6>
+            <ul style="font-size:1.06rem;">
+              <li>For partnerships and bulk licensing, email <a href="mailto:business@bookitpro.com" style="color:var(--primary);">business@bookitpro.com</a></li>
+              <li>Media: <a href="mailto:media@bookitpro.com" style="color:var(--primary);">media@bookitpro.com</a></li>
+              <li>Feedback and feature requests are always welcome!</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-row">
+      <div class="footer-col">
+        <span class="footer-brand">BookItPro</span>
+        <p>Modern, secure, and flexible booking platform for businesses and individuals.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h6>Quick Links</h6>
+        <a href="#services" class="footer-link">Our Services</a>
+        <a href="#booking" class="footer-link">Book Now</a>
+        <a href="#gallery" class="footer-link">Gallery</a>
+        <a href="#contact" class="footer-link">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <h6>For Businesses</h6>
+        <a href="#about" class="footer-link">Why BookItPro?</a>
+        <a href="#services" class="footer-link">Features</a>
+        <a href="#booking" class="footer-link">Pricing</a>
+        <a href="#contact" class="footer-link">Partner With Us</a>
+      </div>
+      <div class="footer-col">
+        <h6>Contact</h6>
+        <div style="font-size:0.98rem;">
+          <i class="bi bi-envelope"></i> support@bookitpro.com<br>
+          <i class="bi bi-telephone"></i> +1 234 567 890<br>
+          <i class="bi bi-geo-alt"></i> 123 Main Street, City
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 BookItPro. All Rights Reserved. | Designed & developed with <span style="color:var(--secondary);font-size:1.1em;">&#10084;</span>
+    </div>
+  </footer>
+  <!-- Bootstrap JS (for responsive utilities) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="./script.js"></script>
+  
+</body>
+</html>
